@@ -10,8 +10,6 @@ namespace SimpleRockPaperScissorsConsole
     {
         static void Main(string[] args)
         {
-            string userInput;
-
             int userWins = 0;
             int consoleWins = 0;
 
@@ -64,7 +62,16 @@ namespace SimpleRockPaperScissorsConsole
             else
             {
                 Console.WriteLine("Sorry you mistyped/chose an invalid option. Please try again.");
-                RockPaperScissors();
+                do
+                {
+                    userInput = Console.ReadLine().ToUpper();
+
+                    if (userInput.Any(userInput.Contains)) 
+                    {
+                        break;
+                    }
+
+                } while (userInput != playerChoices[0] || userInput != playerChoices[1] || userInput != playerChoices[2]);
             }
 
             Random cpuChoice = new Random();
