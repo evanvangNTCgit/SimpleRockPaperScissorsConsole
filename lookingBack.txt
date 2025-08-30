@@ -1,0 +1,2 @@
+Looking back on this I probably could have used enumerations for my player choices because you could have only used rock, paper, or scissors. 
+Thus it would cut out the "AssignIntToChoice". 
